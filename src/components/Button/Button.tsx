@@ -1,11 +1,27 @@
-import React from "react";
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @format
+ */
 
-export interface ButtonProps {
-  label: string;
+import  React from 'react';
+
+
+
+export interface ButtonProps
+ {
+  /**
+   * Text to display inside the button. On Android the given title will be converted to the uppercased form.
+   */
+  title: string;
+
+  /**
+   * Color of the text (iOS), or background color of the button (Android).
+   */
+  
 }
 
-const Button = (props: ButtonProps) => {
-  return <p>hello</p>;
-};
-
-export default Button;
+export class Button extends React.Component<ButtonProps> {}
