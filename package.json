@@ -1,7 +1,11 @@
 {
-  "name": "sample-library",
+  "name": "@Vaishnaviynayak/sample-lib1",
   "version": "1.0.0",
   "description": "sample library",
+  
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@Vaishnaviynayak"
+  },
   "scripts": {
     "rollup":"rollup -c"
   },
